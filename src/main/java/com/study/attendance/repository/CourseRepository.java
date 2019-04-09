@@ -1,7 +1,7 @@
 package com.study.attendance.repository;
 
 import com.study.attendance.bean.Course;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CourseRepository extends PagingAndSortingRepository<Course,Long> {
+public interface CourseRepository extends JpaRepository<Course,Long> {
 }

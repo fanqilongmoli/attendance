@@ -20,7 +20,6 @@ public class StudyService {
     }
 
     public List<Study> getStudyList() {
-        Iterable<Study> all = studyRepository.findAll();
-        return (List<Study>) all;
+        return studyRepository.findAll();
     }
 }
