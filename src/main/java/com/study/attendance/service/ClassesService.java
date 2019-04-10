@@ -21,4 +21,9 @@ public class ClassesService {
     public List<Classes> list() {
         return classesRepository.findAll();
     }
+
+    public OkResult del(Long id) {
+        classesRepository.deleteById(id);
+        return new OkResult(true);
+    }
 }
